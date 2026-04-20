@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "RestaurantApp",
+    "slug": "restaurant-app",
+    "scheme": "restaurantapp",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-sqlite"
+    ],
+    "splash": {
+      "backgroundColor": "#f7f2ea"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.restaurantapp.mobile"
+    },
+    "android": {
+      "package": "com.restaurantapp.mobile"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
