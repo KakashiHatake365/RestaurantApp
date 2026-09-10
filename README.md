@@ -6,29 +6,29 @@ A reusable Expo Router restaurant mobile app starter. It keeps the existing rest
 
 RestaurantApp keeps the same mobile structure and screen layout:
 
-- `app` for Expo Router routes and screens
-- `components` for shared UI building blocks
-- `context` for authentication and order state
-- `data` for local seed menu, rewards, orders, and store content
-- `lib` for theme, local demo persistence, and optional remote API helpers
+* `app` for Expo Router routes and screens
+* `components` for shared UI building blocks
+* `context` for authentication and order state
+* `data` for local seed menu, rewards, orders, and store content
+* `lib` for theme, local demo persistence, and optional remote API helpers
 
 The app includes these primary flows:
 
-- Home dashboard
-- Menu browsing and dish detail pages
-- Rewards
-- Location and store hours
-- Reorder history
-- Checkout and order status
-- Profile, addresses, notifications, and biometric login settings
+* Home dashboard
+* Menu browsing and dish detail pages
+* Rewards
+* Location and store hours
+* Reorder history
+* Checkout and order status
+* Profile, addresses, notifications, and biometric login settings
 
 ## Tech Stack
 
-- Expo SDK 54
-- Expo Router
-- React Native
-- TypeScript
-- Local in-memory demo persistence
+* Expo SDK 54
+* Expo Router
+* React Native
+* TypeScript
+* Local in-memory demo persistence
 
 ## Project Structure
 
@@ -53,31 +53,47 @@ RestaurantApp/
 
 ## Getting Started
 
-Install dependencies:
+### 1. Clone the repository
+
+Clone the project directly from GitHub:
+
+```bash
+git clone https://github.com/KakashiHatake365/RestaurantApp.git
+```
+
+Move into the project directory:
+
+```bash
+cd RestaurantApp
+```
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the Expo dev server:
+### 3. Start the Expo development server
 
 ```bash
 npm run start
 ```
 
-Run on Android:
+### 4. Run the application
+
+For Android:
 
 ```bash
 npm run android
 ```
 
-Run on iOS:
+For iOS:
 
 ```bash
 npm run ios
 ```
 
-Run on web:
+For web:
 
 ```bash
 npm run web
@@ -118,11 +134,29 @@ npx expo-doctor
 
 Generated folders and local secrets are ignored by `.gitignore`, including:
 
-- `node_modules/`
-- `.expo/`
-- `.env`
-- native build outputs: `android/` and `ios/`
+* `node_modules/`
+* `.expo/`
+* `.env`
+* Native build outputs: `android/` and `ios/`
 
-Commit the source files, `package.json`, `package-lock.json`, and this README.
+When contributing changes, commit the source files, `package.json`, `package-lock.json`, and this README.
 
+### Updating the project
 
+To pull the latest changes from GitHub:
+
+```bash
+git pull origin main
+```
+
+After pulling new changes, install any updated dependencies:
+
+```bash
+npm install
+```
+
+Then start the Expo development server:
+
+```bash
+npm run start
+```
